@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.step.pedometer.mystep.utils.SettingActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:src="@drawable/run" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="为了更精准的获取属于您的数据"
+        android:textColor="#1e5dbc"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="请您认真填写您的健康资料"
+        android:textColor="#1e5dbc"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="您的身高："
+            android:textSize="18dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="140dp"
+            android:hint=" 请输入您的身高"
+            android:id="@+id/etGao"
+            android:textSize="16dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="/cm"
+            android:textSize="16dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="您的体重："
+            android:textSize="18dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="140dp"
+            android:hint=" 请输入您的体重"
+            android:textSize="16dp"
+            android:id="@+id/etZhong"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="/kg"
+            android:textSize="16dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="您的步长："
+            android:textSize="18dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="140dp"
+            android:hint=" 请输入您的步长"
+            android:textSize="16dp"
+            android:id="@+id/etBu"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="/m"
+            android:textSize="16dp"
+            android:textColor="#76ea74"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="开启计步之旅"
+        android:textColor="#ffff"
+        android:id="@+id/btStart"
+        android:background="#0090ff"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+</LinearLayout>
